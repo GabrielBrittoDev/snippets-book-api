@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\api\Auth;
+namespace App\Http\Controllers\api\user;
 
 use App\API\ApiError;
 use App\Http\Controllers\Controller;
@@ -40,5 +40,18 @@ class UserController extends Controller
             return response()->json(ApiError::errorMessage('Houve um erro ao realizar a operação de cadastrar', 1010), 500);
 
         }
+    }
+
+
+    public function search(Request $request){
+        try {
+            $query = $request->input('query');
+            $users = User::where('username', 'like', "%$query%")->with('profile')->get(['id','username', 'name']);
+
+            return response()->json($users, 200);
+        } catch (\Exception $e){
+            return response()->json(['error' => ApiError::errorMessage($e->getMessage(), 500)], 500);
+        }
+
     }
 }

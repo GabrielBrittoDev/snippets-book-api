@@ -28,15 +28,18 @@ Route::namespace('api')->name('api.')->group(function(){
     });
 
     Route::prefix('/profile')->namespace('profile')->group(function (){
+        Route::post('/{id}/follow', 'ProfileController@follow');
         Route::get('/{id}', 'ProfileController@show')->name('profile.show');
         Route::put('/{id}', 'ProfileController@update')->name('profile.update');
-        Route::post('/{id}/follow', 'ProfileController@follow');
-
     });
 
     Route::prefix('/skill')->namespace('skill')->group(function (){
         Route::get('/', 'SkillController@index');
         Route::post('/{id}', 'SkillController@store')->name('skill.store');
+    });
+
+    Route::prefix('/user')->namespace('user')->group(function (){
+        Route::get('/search', 'UserController@search')->name('profile.search');
     });
 });
 
