@@ -18,6 +18,7 @@ class UserPolicy
     {
         //
     }
-    public function create(){
+    public function update($user){
+       return $user->id === auth()->user()->id;
     }
 }

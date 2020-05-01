@@ -40,6 +40,8 @@ Route::namespace('api')->name('api.')->group(function(){
 
     Route::prefix('/user')->namespace('user')->group(function (){
         Route::get('/search', 'UserController@search')->name('profile.search');
+        Route::put('/{id}', 'UserController@update')->name('profile.update');
+
     });
 });
 

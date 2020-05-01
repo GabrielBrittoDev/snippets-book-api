@@ -5,6 +5,7 @@ namespace App\Http\Controllers\api\user;
 use App\API\ApiError;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserCreateRequest;
+use App\Http\Requests\UserUpdateRequest;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -53,5 +54,21 @@ class UserController extends Controller
             return response()->json(['error' => ApiError::errorMessage($e->getMessage(), 500)], 500);
         }
 
+    }
+
+    public function update(UserUpdateRequest $request, int $id){
+        try {
+            $user = $this->user->findOrFail($id);
+
+            $this->authorize('update', $user);
+            $validatedData = $request->validated();
+            $validatedData['password'] = bcrypt($request['password']);
+
+            $user->update($validatedData);
+
+            return response()->json(['msg' => 'User updated with success'], 200);
+        } catch (\Exception $e){
+            return response()->json(['error' => ApiError::errorMessage($e->getMessage(), 500)], 500);
+        }
     }
 }
