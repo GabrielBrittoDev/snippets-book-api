@@ -23,9 +23,10 @@ Route::namespace('api')->group(function(){
 
     Route::prefix('/auth')->namespace('Auth')->group(function (){
          Route::post('/login', 'AuthController@login');
-         Route::get('/logout', 'AuthController@logout');
          Route::post('/register', 'RegisterController@store');
- });
+         Route::post('/forgot', 'ForgotPasswordController@reset')->name('forgotPassword.sendResetLinkEmail');
+         Route::get('/logout', 'AuthController@logout');
+    });
 
     Route::prefix('/profile')->namespace('profile')->group(function (){
         Route::post('/{id}/follow', 'ProfileController@follow');
@@ -47,6 +48,7 @@ Route::namespace('api')->group(function(){
         Route::get('/verify/{id}/{hash}', 'VerificationController@verify')->name('verification.verify');
         Route::get('/resend', 'VerificationController@resend')->name('verification.resend');
     });
+
 
 
 
