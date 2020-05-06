@@ -19,25 +19,39 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::namespace('api')->name('api.')->group(function(){
+Route::namespace('api')->group(function(){
 
     Route::prefix('/auth')->namespace('Auth')->group(function (){
          Route::post('/login', 'AuthController@login');
-         Route::get('/logout', 'AuthController@logout');
          Route::post('/register', 'RegisterController@store');
+         Route::post('/forgot', 'ForgotPasswordController@reset')->name('forgotPassword.sendResetLinkEmail');
+         Route::get('/logout', 'AuthController@logout');
     });
 
     Route::prefix('/profile')->namespace('profile')->group(function (){
+        Route::post('/{id}/follow', 'ProfileController@follow');
         Route::get('/{id}', 'ProfileController@show')->name('profile.show');
         Route::put('/{id}', 'ProfileController@update')->name('profile.update');
-        Route::post('/{id}/follow', 'ProfileController@follow');
-
     });
 
     Route::prefix('/skill')->namespace('skill')->group(function (){
         Route::get('/', 'SkillController@index');
         Route::post('/{id}', 'SkillController@store')->name('skill.store');
     });
+
+    Route::prefix('/user')->namespace('user')->group(function (){
+        Route::get('/search', 'UserController@search')->name('profile.search');
+        Route::put('/{id}', 'UserController@update')->name('profile.update');
+    });
+
+    Route::prefix('/email')->namespace('email')->group(function (){
+        Route::get('/verify/{id}/{hash}', 'VerificationController@verify')->name('verification.verify');
+        Route::get('/resend', 'VerificationController@resend')->name('verification.resend');
+    });
+
+
+
+
 });
 
 
