@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c906c2cd-b599-4b1d-98b3-b5d48e76a863" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +200,8 @@
       <workItem from="1588354053235" duration="3782000" />
       <workItem from="1588469105968" duration="6527000" />
       <workItem from="1588596951731" duration="3108000" />
+      <workItem from="1588776006336" duration="335000" />
+      <workItem from="1588871240472" duration="1602000" />
     </task>
     <servers />
   </component>
@@ -231,20 +233,20 @@
     </state>
     <state x="526" y="209" key="FileChooserDialogImpl/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1587448708368" />
     <state x="2024" y="209" key="FileChooserDialogImpl/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1587015753123" />
-    <state x="416" y="278" key="com.intellij.ide.util.TipDialog" timestamp="1588596964545">
+    <state x="334" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1588871249600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="416" y="278" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588596964545" />
+    <state x="334" y="328" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588871249600" />
     <state x="1902" y="278" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588354054940" />
     <state x="420" y="35" width="665" height="831" key="find.popup" timestamp="1587941152956">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="420" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1587941152956" />
     <state x="1907" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1587080520055" />
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1588771694206">
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1588776389598">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588771694206" />
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588776389598" />
     <state x="1903" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588477175760" />
   </component>
 </project>
