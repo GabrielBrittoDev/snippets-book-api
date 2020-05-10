@@ -49,6 +49,24 @@ Route::namespace('api')->group(function(){
         Route::get('/resend', 'VerificationController@resend')->name('verification.resend');
     });
 
+    Route::prefix('/post')->namespace('post')->group(function (){
+        Route::get('/{id}/like', 'PostController@like')->name('post.like');
+
+        Route::post('/', 'PostController@store')->name('post.store');
+        Route::get('/{id}', 'PostController@show')->name('post.show');
+        Route::put('/{id}', 'PostController@update')->name('post.update');
+        Route::delete('/{id}', 'PostController@destroy')->name('post.delete');
+
+        Route::prefix('{id}/comment')->group(function (){
+            Route::post('/', 'CommentController@store')->name('comment.store');
+            Route::put('/{commentId}', 'CommentController@update')->name('comment.update');
+            Route::delete('/{commentId}', 'CommentController@destroy')->name('comment.destroy');
+            Route::get('/{commentId}/like', 'CommentController@like')->name('comment.like');
+            Route::get('/', 'CommentController@show')->name('comment.show');
+ });
+
+    });
+
 
 
 
