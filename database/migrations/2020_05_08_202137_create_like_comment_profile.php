@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLikePostProfileTable extends Migration
+class CreateLikeCommentProfile extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateLikePostProfileTable extends Migration
      */
     public function up()
     {
-        Schema::create('post_profile', function (Blueprint $table) {
+        Schema::create('comment_profile', function (Blueprint $table) {
             $table->unsignedBigInteger('profile_id');
-            $table->unsignedBigInteger('post_id');
+            $table->unsignedBigInteger('comment_id');
         });
     }
 
@@ -26,6 +26,6 @@ class CreateLikePostProfileTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('like_post_profile');
+        Schema::dropIfExists('comment_profile');
     }
 }
