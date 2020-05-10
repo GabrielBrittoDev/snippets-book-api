@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c906c2cd-b599-4b1d-98b3-b5d48e76a863" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/skill/SkillController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/skill/SkillController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SkillsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SkillsSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,9 +243,10 @@
     </state>
     <state x="420" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1587941152956" />
     <state x="1907" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1587080520055" />
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1588776389598">
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1589082948923">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589082948923" />
     <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588776389598" />
     <state x="1903" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588477175760" />
   </component>

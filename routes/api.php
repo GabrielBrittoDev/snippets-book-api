@@ -36,7 +36,6 @@ Route::namespace('api')->group(function(){
 
     Route::prefix('/skill')->namespace('skill')->group(function (){
         Route::get('/', 'SkillController@index');
-        Route::post('/{id}', 'SkillController@store')->name('skill.store');
     });
 
     Route::prefix('/user')->namespace('user')->group(function (){
