@@ -23,7 +23,6 @@ Route::namespace('api')->group(function(){
 
     Route::prefix('/auth')->namespace('Auth')->group(function (){
          Route::post('/login', 'AuthController@login');
-         Route::post('/register', 'RegisterController@store');
          Route::post('/forgot', 'ForgotPasswordController@reset')->name('forgotPassword.sendResetLinkEmail');
          Route::get('/logout', 'AuthController@logout');
     });
@@ -37,11 +36,13 @@ Route::namespace('api')->group(function(){
     Route::prefix('/skill')->namespace('skill')->group(function (){
         Route::get('/', 'SkillController@index')->name('skill.index');
         Route::post('/{id}', 'SkillController@store')->name('skill.store');
+        Route::get('/{id}/posts', 'SkillController@posts')->name('skill.posts');
     });
 
     Route::prefix('/user')->namespace('user')->group(function (){
         Route::get('/search', 'UserController@search')->name('profile.search');
         Route::put('/{id}', 'UserController@update')->name('profile.update');
+        Route::post('/', 'UserController@create')->name('profile.update');
     });
 
     Route::prefix('/email')->namespace('email')->group(function (){
