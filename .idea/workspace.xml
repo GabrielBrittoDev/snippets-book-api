@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c906c2cd-b599-4b1d-98b3-b5d48e76a863" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/post/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/post/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/skill/SkillController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/skill/SkillController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/SkillsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SkillsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/user/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/user/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/post/PostStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/post/PostStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_07_173231_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_07_173231_create_posts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,6 +209,7 @@
       <workItem from="1588776006336" duration="335000" />
       <workItem from="1588871240472" duration="1602000" />
       <workItem from="1589135966103" duration="1161000" />
+      <workItem from="1589215168092" duration="7415000" />
     </task>
     <servers />
   </component>
@@ -236,10 +241,10 @@
     </state>
     <state x="526" y="209" key="FileChooserDialogImpl/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1587448708368" />
     <state x="2024" y="209" key="FileChooserDialogImpl/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1587015753123" />
-    <state x="334" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1589135964072">
+    <state x="334" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1589215213188">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="334" y="328" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1589135964072" />
+    <state x="334" y="328" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1589215213188" />
     <state x="334" y="328" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588871249600" />
     <state x="1902" y="278" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588354054940" />
     <state x="420" y="35" width="665" height="831" key="find.popup" timestamp="1587941152956">
@@ -247,10 +252,10 @@
     </state>
     <state x="420" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1587941152956" />
     <state x="1907" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1587080520055" />
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1589085004515">
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1589223615808">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589085004515" />
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589223615808" />
     <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588776389598" />
     <state x="1903" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588477175760" />
   </component>
