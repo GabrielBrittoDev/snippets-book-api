@@ -11,19 +11,18 @@ class SkillsSeeder extends Seeder
      */
     public function run()
     {
-        $skills = [[
-            'name' => 'Java'],
-            ['name' => 'PHP'],
-            ['name' => 'C#'],
-            ['name' => 'C'],
-            ['name' => 'C++'],
-            ['name' => 'JS'],
-            ['name' => 'Elixir'],
-            ['name' => 'GO'],
-        ];
+        $skills = ['Java', 'PHP', 'C#',
+            'C', 'C++', 'JS',
+            'Elixir', 'GO', 'Perk',
+            'XML', 'Erlang', 'SQL',
+            'Lisp', 'Lua', 'Swift',
+            'MatLab', 'Cobol', 'Pascal',
+            'Dart', 'Delphi', 'Ruby',
+            'Rust', 'Kotlin'];
 
         foreach ($skills as $skill) {
-            DB::table('skills')->insert($skill);
+            DB::table('skills')->insert(['name' => $skill]);
         }
     }
 }
+

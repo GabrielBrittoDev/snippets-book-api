@@ -22,7 +22,6 @@ class PostController extends Controller
     }
 
     public function store(PostStoreRequest $request){
-
         try {
             $post = $request->validated();
 

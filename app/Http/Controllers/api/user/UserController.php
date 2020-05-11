@@ -15,25 +15,23 @@ class UserController extends Controller
 
     public function __construct(User $user)
     {
+        $this->middleware('apiJwt')->except('create');
+        $this->middleware('guest')->only('create');
         $this->user = $user;
     }
 
 
-    public function create(UserCreateRequest $request){
+    public function store(UserCreateRequest $request){
         try {
-
-            $this->middleware('guest');
-
             $userData = $request->validated();
 
             $userData['password'] = bcrypt($request['password']);
 
             $this->user->create($userData);
 
-            $response = ['data' => ['msg' => 'User criado com sucesso!']];
+            $response = ['msg' => 'User criado com sucesso!'];
 
             return response()->json($response, 201);
-
         } catch (\Exception $e){
             if (config('app.debug')){
                 return response()->json(ApiError::errorMessage($e->getMessage(), 1010), 500);

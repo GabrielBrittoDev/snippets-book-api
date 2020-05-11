@@ -25,9 +25,11 @@ class PostStoreRequest extends FormRequest
     {
             return [
                 'description' => 'min:4|max:50|required',
-                'image' => 'min:3|max:230',
+                'image' => 'max:230',
                 'snippet' => 'min:2|max:280|required',
-                'restrict' => 'required'
+                'restrict' => 'required',
+                'user_id' => '',
+                'skill_id' => 'required',
             ];
     }
 }
