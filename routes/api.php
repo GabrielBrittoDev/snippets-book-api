@@ -23,7 +23,6 @@ Route::namespace('api')->group(function(){
 
     Route::prefix('/auth')->namespace('Auth')->group(function (){
         Route::post('/login', 'AuthController@login')->name('auth.login');
-        Route::post('/forgot', 'ForgotPasswordController@reset')->name('forgotPassword.sendResetLinkEmail');
         Route::get('/logout', 'AuthController@logout')->name('auth.logout');
     });
 
