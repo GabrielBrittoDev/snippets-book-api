@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c906c2cd-b599-4b1d-98b3-b5d48e76a863" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/reset-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/reset-password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/profile/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/profile/ProfileController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,15 +242,16 @@
     <state x="334" y="328" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1589215213188" />
     <state x="334" y="328" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588871249600" />
     <state x="1902" y="278" key="com.intellij.ide.util.TipDialog/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588354054940" />
-    <state x="420" y="35" width="665" height="831" key="find.popup" timestamp="1587941152956">
+    <state x="420" y="35" width="665" height="831" key="find.popup" timestamp="1589290789900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="420" y="35" width="665" height="831" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1589290789900" />
     <state x="420" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1587941152956" />
     <state x="1907" y="35" width="665" height="831" key="find.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1587080520055" />
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1589290187368">
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1589290799174">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589290187368" />
+    <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589290799174" />
     <state x="417" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1588776389598" />
     <state x="1903" y="193" width="672" height="678" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@1440.0.1600.900" timestamp="1588477175760" />
   </component>

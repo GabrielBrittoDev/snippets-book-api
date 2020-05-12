@@ -43,8 +43,9 @@ class ProfileController extends Controller
 
     public function follow(Profile $id){
         try {
-            auth()->user()->profile->followers()->toggle($id);
-            return response()->json('Success', 200);
+            $state = auth()->user()->profile->followers()->toggle($id);
+            $stateMsg = $state['attached'] ? 'seguido' : 'deixado de seguir';
+            return response()->json(['msg' => $stateMsg], 200);
         } catch (\Exception $e){
             return response()->json(ApiError::errorMessage($e->getMessage(), 0), 500);
         }
