@@ -22,13 +22,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::namespace('api')->group(function(){
 
     Route::prefix('/auth')->namespace('Auth')->group(function (){
-         Route::post('/login', 'AuthController@login');
-         Route::post('/forgot', 'ForgotPasswordController@reset')->name('forgotPassword.sendResetLinkEmail');
-         Route::get('/logout', 'AuthController@logout');
+        Route::post('/login', 'AuthController@login')->name('auth.login');
+        Route::post('/forgot', 'ForgotPasswordController@reset')->name('forgotPassword.sendResetLinkEmail');
+        Route::get('/logout', 'AuthController@logout')->name('auth.logout');
     });
 
     Route::prefix('/profile')->namespace('profile')->group(function (){
-        Route::post('/{id}/follow', 'ProfileController@follow');
+        Route::post('/{id}/follow', 'ProfileController@follow')->name('profile.follow');
         Route::get('/{id}', 'ProfileController@show')->name('profile.show');
         Route::put('/{id}', 'ProfileController@update')->name('profile.update');
     });
@@ -42,7 +42,7 @@ Route::namespace('api')->group(function(){
     Route::prefix('/user')->namespace('user')->group(function (){
         Route::get('/search', 'UserController@search')->name('profile.search');
         Route::put('/{id}', 'UserController@update')->name('profile.update');
-        Route::post('/', 'UserController@create')->name('profile.update');
+        Route::post('/', 'UserController@store')->name('profile.store');
     });
 
     Route::prefix('/email')->namespace('email')->group(function (){
@@ -64,13 +64,9 @@ Route::namespace('api')->group(function(){
             Route::delete('/{commentId}', 'CommentController@destroy')->name('comment.destroy');
             Route::get('/{commentId}/like', 'CommentController@like')->name('comment.like');
             Route::get('/', 'CommentController@show')->name('comment.show');
- });
+        });
 
     });
-
-
-
-
 });
 
 
