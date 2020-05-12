@@ -15,8 +15,8 @@ class UserController extends Controller
 
     public function __construct(User $user)
     {
-        $this->middleware('apiJwt')->except('create');
-        $this->middleware('guest')->only('create');
+        $this->middleware('apiJwt')->except('store');
+        $this->middleware('guest')->only('store');
         $this->user = $user;
     }
 
